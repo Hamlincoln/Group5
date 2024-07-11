@@ -8,16 +8,14 @@
     function getFactorial(inputNumber) {
         if (inputNumber <= 50 && inputNumber >= 0 ){
             for (var num = 1; num <= inputNumber; num++) {
-            finalNumber= finalNumber * num;
+                finalNumber= finalNumber * num;
             }
+            alert(finalNumber)
         }
         else{
             alert("Not in range");
         }
-    
-        alert(finalNumber)
     }
-
     </SCRIPT>
 
 </HEAD>
@@ -32,6 +30,9 @@
     <A HREF="#" onClick="getFactorial(20)">Factorial of 20</A>
     <br>
     <A HREF="#" onClick="getFactorial(25)">Factorial of 25</A>
+    <br>
+    <A HREF="#" onClick="getFactorial(60)">Factorial of 60 (Test)</A>
+    
 </BODY>
 
 </HTML>
