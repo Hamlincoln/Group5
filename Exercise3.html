@@ -1,16 +1,37 @@
 <HTML>
 <HEAD>
 <TITLE>Exercise3</TITLE>
+<SCRIPT Language="JavaScript">
+    
+    var finalNumber=1;
+    
+    function getFactorial(inputNumber) {
+        if (inputNumber <= 50 && inputNumber >= 0 ){
+            for (var num = 1; num <= inputNumber; num++) {
+            finalNumber= finalNumber * num;
+            }
+        }
+        else{
+            alert("Not in range");
+        }
+    
+        alert(finalNumber)
+    }
+
+    </SCRIPT>
+
 </HEAD>
+
 <body>
-
-<link>
-    <a href="factor5.html"> Factorial of 5 </a>
-    <a href="factor10.html"> Factorial of 10 </a>
-    <a href="factor15.html"> Factorial of 15 </a>
-    <a href="factor20.html"> Factorial of 20 </a>
-    <a href="factor25.html"> Factorial of 25 </a>
-
-</body>
+    <A HREF="#" onClick="getFactorial(5)">Factorial of 5</A>
+    <br>
+    <A HREF="#" onClick="getFactorial(10)">Factorial of 10</A>
+    <br>
+    <A HREF="#" onClick="getFactorial(15)">Factorial of 15</A>
+    <br>
+    <A HREF="#" onClick="getFactorial(20)">Factorial of 20</A>
+    <br>
+    <A HREF="#" onClick="getFactorial(25)">Factorial of 25</A>
+</BODY>
 
 </HTML>
