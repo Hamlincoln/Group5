@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>Link Event Example</TITLE>
+<SCRIPT Language="JavaScript">
+<!--
+var finalNumber=1;
+
+function getFactorial(inputNumber) {
+    if (inputNumber <= 50 && inputNumber >= 0 ){
+        for (var num = 1; num <= inputNumber; num++) {
+        finalNumber= finalNumber * num;
+        }
+    }
+    else{
+        alert("Not in range");
+    }
+
+   alert(finalNumber)
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<A HREF="#" onMouseOver="getFactorial(25)">Factorial of 25</A>
+</BODY>
+</HTML>
